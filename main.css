@@ -14,21 +14,16 @@ h1 {
 img {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 40px;
+  margin: 40px auto;
+  display: block;
   max-width: 80%;
 }
 
 p {
-  color: #f8f8f8;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
-.flower {
-  background-color: #ff69b4;
-  height: 50px;
-  width: 50px;
-  margin: 0 auto;
-  margin-top: 20px;
-  border-radius: 50%;
+.love {
+  color: #ff69b4;
 }
