@@ -17,7 +17,7 @@ h1 {
 }
 
 @keyframes blink {
-  0% {
+  30% {
     opacity: 1;
   }
   100% {
