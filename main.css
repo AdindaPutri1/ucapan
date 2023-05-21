@@ -1,5 +1,5 @@
 body {
-  background-color: cream;
+  background-color: black;
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -10,11 +10,14 @@ h1 {
   margin-top: 20px;
   font-size: 32px;
   font-weight: bold;
+}
+
+.blink {
   animation: blink 1s infinite alternate;
 }
 
 @keyframes blink {
-  20% {
+  0% {
     opacity: 1;
   }
   100% {
