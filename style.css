@@ -62,12 +62,12 @@
     transform: scale(1.1);
   }
   
-  #no-button {
+  #Haechan-button {
     background-color: #e74c3c;
     color: #fff;
   }
   
-  #no-button:hover {
+  #Haechan-button:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
   }
@@ -90,7 +90,7 @@
     }
   }
   
-  #yes-button {
+  #Dinda-button {
     background-color: #2ecc71;
     color: #fff;
   }
