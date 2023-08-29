@@ -103,7 +103,7 @@
       confetti.render();
 
       let p = document.createElement("p");
-      p.innerText = "Congrats 🎉\n you made the right choice😉";
+      p.innerText = "😉";
       p.style.fontSize = "2rem";
       p.style.fontWeight = "bold";
       p.style.textAlign = "center";
