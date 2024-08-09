@@ -1,91 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Surat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulang Tahun</title>
   <style>
-body {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: var(--dark-color);
-  overflow: hidden;
-  perspective: 1000px;
-}
+    :root {
+      --dark-color: #000;
+    }
 
-.night {
-  position: fixed;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-  filter: blur(0.1vmin);
-  background-image: radial-gradient(
-      square at top,
-      transparent 0%,
-      var(--dark-color)
-    ),
-    radial-gradient(
-      ellipse at bottom,
-      var(--dark-color),
-      rgba(145, 233, 255, 0.2)
-    ),
-    repeating-linear-gradient(
-      220deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    repeating-linear-gradient(
-      189deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    repeating-linear-gradient(
-      148deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
-    ),
-    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
-}
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: var(--dark-color);
+      overflow: hidden;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+    }
+
+    .night {
+      position: fixed;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      filter: blur(0.1vmin);
+      background-image: radial-gradient(
+          ellipse at top,
+          transparent 0%,
+          var(--dark-color)
+        ),
+        radial-gradient(
+          ellipse at bottom,
+          var(--dark-color),
+          rgba(145, 233, 255, 0.2)
+        ),
+        repeating-linear-gradient(
+          220deg,
+          rgb(0, 0, 0) 0px,
+          rgb(0, 0, 0) 19px,
+          transparent 19px,
+          transparent 22px
+        ),
+        repeating-linear-gradient(
+          189deg,
+          rgb(0, 0, 0) 0px,
+          rgb(0, 0, 0) 19px,
+          transparent 19px,
+          transparent 22px
+        ),
+        repeating-linear-gradient(
+          148deg,
+          rgb(0, 0, 0) 0px,
+          rgb(0, 0, 0) 19px,
+          transparent 19px,
+          transparent 22px
+        ),
+        linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .photo {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      margin-bottom: 20px;
+    }
 
     h1 {
       color: #ff69b4;
       margin-top: 20px;
+      font-size: 2.5em;
     }
 
-    img {
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin: 40px;
-    }
-
-     p {
-      color: #fff; /* Changed color to white */
+    .message {
+      background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+      color: #fff; /* White text */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
       margin-bottom: 20px;
+      font-size: 1.2em;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+
+    .button a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button a:hover {
+      background-color: #ff1493;
     }
   </style>
 </head>
 <body>
-  <img src="foto.jpeg" alt="gambar" width="500" height="500">
-  <p> Hallo sayang-sayangku Roosseno 13,<br><br>
+  <div class="night"></div>
+  <h1>💖 Selamat Ulang Tahun! 💖</h1>
+  <div class="container">
+    <img src="foto.jpeg" alt="gambar" class="photo">
+    <div class="message">
+      Hallo sayang-sayangku Roosseno 13,<br><br>
       Hai, aku Dinda. Aku mau bilang terima kasih yang sebesar-besarnya. Makasih udah jadi teman baruku yang luar biasa baik. Aku merasa sangat beruntung bisa kenal sama teman-teman semua.<br><br>
       Tau nggak? Tiap Pionir, sebadmood apapun aku, secapek apapun yang aku rasain, tapi rasa itu langsung hilang tiap ketemu kalian. Melihat kalian yang selalu ceria, penuh semangat, dan senyum yang tulus membuat hariku lebih baik.<br><br>
       Aku juga ingin meminta maaf jika ada sikap atau perbuatanku yang mungkin kurang berkenan, baik yang sengaja maupun tidak. Yang pasti, aku sayang banget sama kalian. Jika ada apa-apa atau kalian butuh bantuan, aku selalu ada untuk kalian.<br><br>
-      Huhuuuuu aku pengen sering ketemu!</p>
-  <p>Terima kasih telah menjadi bagian dari hidup Dinda.</p>
-  <p>˚ʚ♡ɞ˚</p>
-
-  <div class="button">
-    <button>
+      Huhuuuuu aku pengen sering ketemu!
+    </div>
+    <div class="button">
       <a href="https://adindaputri1.github.io/ngajakBelajar/">klik ini wir!</a>
-    </button>
+    </div>
   </div>
 </body>
 </html>
